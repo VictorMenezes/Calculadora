@@ -12,11 +12,11 @@
 		</section>
 
 	<section id="button">
-		<button v-on:click="calc('somar')">+</button>
-		<button v-on:click="calc('subtrair')">-</button>
-		<button v-on:click="calc('multiplicar')">*</button>
-		<button v-on:click="calc('dividir')">/</button>
-		<button v-on:click="zerar()">C</button>
+		<button class="butao" v-on:click="calc('somar')">+</button>
+		<button class="butao" v-on:click="calc('subtrair')">-</button>
+		<button class="butao" v-on:click="calc('multiplicar')">*</button>
+		<button class="butao" v-on:click="calc('dividir')">/</button>
+		<button class="butao" v-on:click="zerar()">C</button>
 	</section>
 	</div>
 
@@ -85,5 +85,8 @@
 		flex-direction:column;
 		padding-top:40px;
 
+	}
+	.butao{
+		border-radius:25px;
 	}
 </style>
