@@ -1,12 +1,17 @@
 <template>
 	<div id="cal">
 		<section>
-			<input type="number" name="" v-model.number="v1">
-			<input type="number" name="" v-model.number="v2">
-			<input type="number" name="" v-model.number="resultado">
+			<h1 class="h1-calc">Calculadora</h1>
+			<input class="valor" type="number" name="" v-model.number="v1">
+			<br>
+			<br>
+			<input class="valor" type="number" name="" v-model.number="v2">
+			<br>
+			<br>
+			<input class="valor" type="number" name="" v-model.number="resultado">
 		</section>
 
-	<section>
+	<section id="button">
 		<button v-on:click="calc('somar')">+</button>
 		<button v-on:click="calc('subtrair')">-</button>
 		<button v-on:click="calc('multiplicar')">*</button>
@@ -57,8 +62,28 @@
 		display:block;
 		margin:0 auto;
 		padding: 20px;
-		background-color:#00f;
+		background-color:#0ff;
 		width:300px;
-		height: 500px;
+		height:70vh;
+		border-radius:15px;
 	}
-</<style>
+	.h1-calc{
+		font-family: verdana;
+		font-size:20px;
+		text-align:center;
+		color:#00f;
+		padding-top:80px;
+	}
+	.valor{
+		color:navy;
+		margin:auto;
+		border-radius:10px;
+		border-top: 6px  solid powderblue;
+	}
+	#button{
+		display:flex;
+		flex-direction:column;
+		padding-top:40px;
+
+	}
+</style>
